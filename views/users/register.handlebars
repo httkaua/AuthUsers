@@ -1,0 +1,34 @@
+{{#each newAccErrors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{/each}}
+
+<div class="container mt-5">
+    <h2>Register new account</h2>
+    <form action="/users/newaccount" method="POST">
+        <div class="mb-3">
+            <label for="newUserFirstName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="newUserFirstName" name="newUserFirstName" required>
+        </div>
+        <div class="mb-3">
+            <label for="newUserLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="newUserLastName" name="newUserLastName">
+        </div>
+        <div class="mb-3">
+            <label for="newUserCompany" class="form-label">Company</label>
+            <input type="text" class="form-control" id="newUserCompany" name="newUserCompany">
+        </div>
+        <div class="mb-3">
+            <label for="newUserEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="newUserEmail" name="newUserEmail" required>
+        </div>
+        <div class="mb-3">
+            <label for="newUserPassword" class="form-label">Password (greater than 7 characters)</label>
+            <input type="password" class="form-control" id="newUserPassword" name="newUserPassword" required>
+        </div>
+        <div class="mb-3">
+            <label for="newUserPasswordConfirm" class="form-label">Confirm password</label>
+            <input type="password" class="form-control" id="newUserPasswordConfirm" name="newUserPasswordConfirm" required>
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
+</div>

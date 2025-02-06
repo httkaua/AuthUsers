@@ -1,0 +1,59 @@
+<h3 class="text-center">A website to learn about authentications in Node.js</h3><br>
+{{#if user}}
+    <div class="card">
+    <div class="card-header">{{user.firstName}} {{user.lastName}}</div>
+    <p style="margin-left: 10px;">Logged and authenticated</p>
+    <img
+        src="/img/profile.png"
+        alt="profile"
+        class="img-fluid rounded shadow-sm"
+        style="heigh: 8vh; width: 8vh;"
+      />
+  </div>
+{{else}}
+    <div class="card">
+  <div class="card-header">
+    Register
+  </div>
+  <div class="card-body">
+        <h4>First time here?</h4>
+        <p>Create an account in less than 5 minutes or log in.</p>
+        <a href="users/wantLogin"><button class="btn btn-primary">Sign in</button></a>
+  </div>
+</div>
+{{/if}}
+
+
+
+<div class="card mt-4">
+  <div class="card-header">
+    VIP area ⭐
+  </div>
+  <div class="card-body">
+        <h4>You already created your account?</h4>
+        <p>If yes, come to the VIP area of our website.</p>
+        <a href="admin/ultra-secret-area"><button class="btn btn-warning">Go to VIP area</button></a>
+  </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+      <h4>Hashs, encryption and authentications</h4>
+      <h5>What I learned in this project</h5>
+        <p>The goal was learn how to work with passwords in the database, and authentications. The chosen database was mongoDB. I was used the libraries bcrypt to hash the password in the server, and passport to manager the authentication</p>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h4>Lorem Ipsum</h4>
+        <p>Vestibulum in libero vitae ipsum luctus suscipit. Aliquam erat volutpat. Cras sollicitudin orci sed odio interdum vulputate. Nulla laoreet pharetra magna, ut malesuada mauris dignissim a. Curabitur convallis neque eget lectus sagittis vulputate.</p>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h4>Lorem Ipsum</h4>
+        <p>In a condimentum felis, sed mattis mi. Nulla efficitur quam non enim ultricies facilisis. Phasellus consequat sit amet lacus et mollis. Curabitur vel diam ut mi sodales interdum ac et nisl. Donec cursus scelerisque nibh a condimentum.</p>
+    </div>
+</div>
